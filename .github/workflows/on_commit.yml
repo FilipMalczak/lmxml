@@ -29,7 +29,7 @@ jobs:
         run: uv sync
 
       - name: Run tests
-        run: uv run pytest
+        run: uv run pytest -vv # this project has no sensitive data in tests, so we can be as verbose as we want
 
       - name: Publish test report
         uses: dorny/test-reporter@v2
