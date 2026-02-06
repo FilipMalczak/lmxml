@@ -113,6 +113,9 @@ x: pydantic.BaseModel
 lmxml.dumps(x) == lmxml.dumps(x.model_dump(mode="json"))
 ```
 
+Pydantic is not a dependency, even an optional one. I just recognize whether it is present and add that tweak (including 
+typing) if it is.
+
 ---
 
 ## Where's the deserializer?
