@@ -1,6 +1,6 @@
 [project]
 name = "lmxml"
-description = "TODO"
+description = "Serialization format readable for LLMs and humans"
 readme = "README.md"
 requires-python = ">=3.10" #todo safe default, but make sure we cannot support earlier versions
 license = { text = "MIT" }
