@@ -104,6 +104,15 @@ Loves coffee
 </tags>
 ```
 
+### Pydantic support
+
+If `pydantic` is importable, then you can feed any instance of `BaseModel` to `lmxml.dumps`. Following is an invariant:
+
+```
+x: pydantic.BaseModel
+lmxml.dumps(x) == lmxml.dumps(x.model_dump(mode="json"))
+```
+
 ---
 
 ## Where's the deserializer?
